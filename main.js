@@ -12,11 +12,15 @@ Ex:  hello(null) => null
 
 */
 
-function hello() {
-  // WRITE YOUR CODE UNDER THIS LINE  
+function hello(str) {
+  
+  if (str.length<=0){
 
+    return null ;
+  }
+    return "HELLO"+str 
 }
-
+ console.log(hello("ssss"));
 
 /* Q2:
 Create a function called calculateTax
@@ -32,11 +36,14 @@ Ex: calculateTax(100,0.15)
 => "You got 100 JD from sales, you should pay 15 JD for tax and you will have 85 JD as net sales."
 */
 
-function calculateTax() {
-  // WRITE YOUR CODE UNDER THIS LINE 
-
+function calculateTax(num1,num2,num3) {
+  
+  num3=num1*0.16;
+  num2=num1-num3
+return "You got "+num1+" JD from sales, you should pay "+num3+" JD for tax and you will have "+ num2+" JD as net sales."
 }
 
+console.log(calculateTax(315,0.10))
 
 /* Q3:
 Using while
@@ -52,9 +59,17 @@ Ex: repeatChar("a",2); => "a, A"
 Ex: repeatChar("C",5); => "C, c, C, c, C"
 */
 
-function repeatChar() {
-  // WRITE YOUR CODE UNDER THIS LINE         
-
+function repeatChar(str,num) {
+ var add = num /add 
+ var even = num /even
+  while (num===add) {
+     
+   return res = str.toLowerCase();
+    add--
+  }
+         
+ return res = str.toLowerCase();
+  even--
 }
 
 
@@ -72,9 +87,16 @@ Ex: stringToCapital("Are you a student in coding ACADEMY by ORANGE ?")
 => "ARE YOU A STUDENT IN CODING ACADEMY BY ORANGE ?"
 */
 
-function stringToCapital() {
-  // WRITE YOUR CODE UNDER THIS LINE         
+function stringToCapital(str) {
+    
+  
+  var res = str.toLowerCase();
+  return document.getElementById("demo").innerHTML = res;
 
 }
+ 
 
+
+       
+    
 // Good luck :)
